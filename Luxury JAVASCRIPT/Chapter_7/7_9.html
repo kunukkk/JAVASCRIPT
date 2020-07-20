@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>book 객체 만들기</title>
+    <script>
+        var book1 = new Object();
+        book1.title = "HTML";
+        book1.author = "황기태";
+        book1.price = 20000;
+        
+        var book2 = {
+            title : "CSS",
+            author : "황니태",
+            price : 30000,
+        };
+        
+        function Book(title, author, price){
+            this.title = title;
+            this.author = author;
+            this.price = price;
+        }
+    </script>
+</head>
+<body>
+    <h3>book 객체 만들기</h3>
+    <hr>
+    <script>
+        document.write("book1 : " + book1.title + ", " + book1.author + ", " + book1.price + "<br>");
+        
+        document.write("book2 : " + book2.title + ", " + book2.author + ", " + book2.price + "<br>");
+        
+        var book3 = new Book("JAVASCRIPT","황디태",40000);
+        document.write("book3 : " + book3.title + ", " + book3.author + ", " + book3.price);
+    </script>
+</body>
+</html>
