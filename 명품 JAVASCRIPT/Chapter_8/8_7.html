@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>클릭하면 90도 회전합니다.</title>
+    <script>
+        var n = 90;
+        function turn(){
+            var g = document.getElementById("pogba");
+            g.style.transform="rotate("+n+"deg)";
+            n += 90;
+            n %= 360;
+        }
+    </script>
+</head>
+<body>
+    <h3>클릭하면 90도 회전합니다.</h3>
+    <hr>
+    <img id="pogba" src="pogba.jpg" width="100" height="100" onclick="turn()">
+</body>
+</html>

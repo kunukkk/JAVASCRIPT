@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document.getElementsByTagName()</title>
+    <script>
+        function change(){
+            var spanArray = document.getElementsByTagName("span");
+            for(var i=0; i<spanArray.length; i++){
+                var span = spanArray[i];
+                span.style.color = "orchid";
+                span.style.fontSize = "80px";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>document.getElementsByTagName()</h3>
+    <button onclick="change()" style="color: red">CLICK</button>
+    <hr>
+    11111111111111<span>aaa</span>2222222222222222<span>bbb</span>
+    33333333333333<span>ccc</span>4444444444444444<span>ddd</span>
+</body>
+</html>

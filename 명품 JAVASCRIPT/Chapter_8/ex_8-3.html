@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerHTML 활용</title>
+    <script>
+        function change(){
+            var p = document.getElementById("firstP");
+            p.innerHTML = "PAUL <img src='pogba.jpg' style='width: 100px'> POGBA"
+        }
+    </script>
+</head>
+<body>
+    <h3>innerHTML 활용</h3>
+    <hr>
+    <p id="firstP" style="color: blue" onclick="change()">
+        Click Here!!
+    </p>
+</body>
+</html>

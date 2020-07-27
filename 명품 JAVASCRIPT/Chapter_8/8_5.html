@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index 스타일 프로퍼티</title>
+    <style>
+        div{
+            position: absolute;
+        }
+        img{
+            position: absolute;
+        }
+        #heartK{
+            z-index: 1;
+        }
+        #diamondK{
+            z-index: 2;
+        }
+        #cloverK{
+            z-index: 3;
+        }
+        #spadeK{
+            z-index: 4;
+        }
+    </style>
+    <script>
+        function zx(k){
+            var s = document.getElementById(k);
+            s.style.zIndex -= 4;
+        }
+    </script>
+</head>
+<body>
+    <h3>z-index 스타일 프로퍼티</h3>
+    <hr>
+    <div>
+        <img src="hk.JPG" width="100" height="140" id="heartK" onclick="zx('heartK')">
+        <img src="dk.JPG" width="100" height="140" id="diamondK" onclick="zx('diamondK')">
+        <img src="ck.JPG" width="100" height="140" id="cloverK" onclick="zx('cloverK')">
+        <img src="sk.JPG" width="100" height="140" id="spadeK" onclick="zx('spadeK')">
+    </div>
+</body>
+</html>
