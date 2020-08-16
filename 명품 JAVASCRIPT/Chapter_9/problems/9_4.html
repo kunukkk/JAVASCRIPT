@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            position: absolute;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h3>이미지 커서 만들기</h3>
+    <hr>
+    <p>마우스가 움직이면 이미지로 만든
+        커서가 마우스를 따라 다닙니다.</p>
+    
+    <div id="div"><img src="banana.jpg" alt="."></div>
+    
+    <script>
+        document.onmouseover = function(e){
+            var div = document.getElementById("div");
+            div.style.left=e.x+"px";
+            div.style.top=e.y+"px";
+        }
+    </script>
+</body>
+</html>
