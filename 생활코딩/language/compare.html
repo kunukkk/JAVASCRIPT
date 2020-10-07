@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        alert(1=="1");
+        // 데이터 type이 다르더라도
+        // 나타내고자 하는 의미가 같기 때문에 true
+        alert(1==="1")
+        // 데이터 type도 같고
+        // 나타내과자 하는 의도 같을 때만 true
+        
+        // ===, 즉 3개짜리를 쓰는것이 권장됨
+        
+        alert(null == undefined);       //true
+        alert(null === undefined);      //false
+        alert(true == 1);               //true
+        alert(true === 1);              //false
+        alert(true == '1');             //true
+        alert(true === '1');            //false v
+        alert(0 === -0);                //true
+        alert(NaN === NaN);             //false
+        // javascript에서의 동등연산자(==)는
+        // 숫자 1만을 true로 간주한다.
+    </script>
+</body>
+</html>

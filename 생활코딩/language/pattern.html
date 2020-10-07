@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pattern = /a/;
+        document.write("exec:"+pattern.exec('brain')+'<br/>');
+        document.write("test:"+pattern.test('brin')+'<br/>');
+        document.write("match:"+"abced".match(pattern)+'<br/>');
+        var temp=/a/ig;
+        document.write("i,g:"+"AbeAadw".match(temp)+'<br/>');
+        
+        
+        var pattern = /(\w+)\s(\w+)/;
+        // w:A~Z, a~z, 0~9, s:space
+        var str = "coding everybody plus";
+        var result = str.replace(pattern, "$2, $1");
+        document.write(result + '<br/>');
+        
+        
+        var urlPattern = /\b(?:https?):\/\/[a-z0-9-+&@#\/%?=~_|!:,.;]*/gim;
+        var content = '생활코딩 : http://opentutorials.org/course/1 입니다. 네이버 : http://naver.com 입니다. ';
+        var result = content.replace(urlPattern, function(url){
+            return '<a href="'+url+'">'+url+'</a>';
+        });
+        document.write(result);
+    </script>
+</body>
+</html>

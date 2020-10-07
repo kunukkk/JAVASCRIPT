@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function numbering(){
+            document.write(1);
+        }
+        numbering();
+        function number(){
+            return 2;
+        }
+        alert(number());
+        
+        
+        document.write("<br/>-------------<br/>")
+        var numbering = function (){
+            i = 0;
+            while(i < 10){
+                document.write(i);
+                i += 1;
+            }   
+        }
+        numbering();
+        
+        
+        
+        document.write("<br/>-------------<br/>")
+        (function (){
+            i = 100;
+            while(i < 110){
+                document.write(i);
+                i += 1;
+            }   
+        })(); 
+        
+        // 1회성 호출 - 익명함수
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <script>
+    function change(obj, size, color){
+        obj.style.fontSize=size;
+        obj.style.color=color;
+    }</script>
+</head>
+<body>
+    <input type="button" value="t1" onclick="change(this,'30px','red')">
+    <input type="button" value="t2" onclick="change(this,'30px','orange')">
+    <input type="button" value="t3" onclick="change(this,'30px','blue')">
+    <div onclick="change(this,'50px','purple')">
+        hello world!
+    </div>
+</body>
+</html>

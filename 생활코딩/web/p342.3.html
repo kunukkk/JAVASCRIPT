@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var time = new Date();
+        if(time.getHours() < 12){
+            document.body.style.backgroundColor="lightskyblue";
+        }
+        else{
+            document.body.style.backgroundColor="orange";
+        }
+        document.write("현재시간 : " + time.toLocaleTimeString());
+        document.write("<hr>");
+        
+    </script>
+</body>
+</html>

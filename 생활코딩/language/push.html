@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var li = ['a', 'b', 'c', 'd', 'e'];
+        li.push('f');
+        document.write(li);
+        
+        document.write("<br />-------------<br />");
+
+        
+        var li = ['a', 'b', 'c', 'd', 'e'];
+        li = li.concat(['f', 'g']);
+        document.write(li);
+        
+        document.write("<br />-------------<br />");
+
+        
+        var li = ['a', 'b', 'c', 'd', 'e'];
+        li.unshift('z');
+        document.write(li);
+        
+        document.write("<br />-------------<br />");
+
+        
+        var li = ['a', 'b', 'c', 'd', 'e'];
+        document.write(li.splice(2, 2, 'B'));
+        document.write(li);
+        
+        document.write("<br />-------------<br />");
+            
+        var li = ['a', 'b', 'c', 'd', 'e'];
+        document.write(li.shift());
+        document.write(li);
+        
+        document.write("<br />-------------<br />");
+            
+        var li = ['a', 'b', 'c', 'd', 'e'];
+        document.write(li.pop());
+        document.write(li);
+        
+        document.write("<br />-------------<br />");
+            
+        var li = ['c', 'e', 'a', 'b', 'd'];
+        document.write(li.sort());
+        document.write(li);
+        
+        document.write("<br />-------------<br />");
+            
+        var li = ['c', 'e', 'a', 'b', 'd'];
+        document.write(li.reverse());
+        document.write(li);
+        
+        document.write("<br />-------------<br />");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function bookArray(bname,name,price){
+            this.bname=bname;
+            this.name=name;
+            this.price=price;
+        }
+    </script>
+
+</head>
+
+<body>
+    <script>
+        var max=-1;
+        var exp;
+        for(var i=0;i<5;i++){
+            var str = prompt("콤마(,)로 분리하면서 책제목 저자 가격 순으로 입력");
+            str=str.split(",");
+            var bs=new bookArray(str[0],str[1],str[2]);
+            document.write(bs.bname+bs.name+bs.price);
+            document.write("<br>");
+            if(bs.price > max){
+                max = bs.price;
+                exp = bs.bname;
+            }
+        }     
+        document.write(exp);
+    </script>
+</body>
+
+</html>
